@@ -5,13 +5,13 @@ import "../page.css";
 // SVG Icons as React components
 const PhoneIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
   </svg>
 );
 
 const WhatsAppIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 2.8 1.4 4.8 1.4 5.4 0 9.8-4.4 9.8-9.8 0-5.4-4.4-9.8-9.8-9.8-5.4 0-9.8 4.4-9.8 9.8 0 2 .5 3.5 1.4 5.1l-.9 3.4 3.5-.9zM17.5 14.9c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.8-.7-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10 9 9.3 7.3 9 6.6c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7 0 1.6 1.2 3.1 1.3 3.3.1.2 2.3 3.6 5.7 5 1 .4 1.7.6 2.3.8.8.2 1.6.2 2.2.1.7-.1 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/>
+    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 2.8 1.4 4.8 1.4 5.4 0 9.8-4.4 9.8-9.8 0-5.4-4.4-9.8-9.8-9.8-5.4 0-9.8 4.4-9.8 9.8 0 2 .5 3.5 1.4 5.1l-.9 3.4 3.5-.9zM17.5 14.9c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.8-.7-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10 9 9.3 7.3 9 6.6c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7 0 1.6 1.2 3.1 1.3 3.3.1.2 2.3 3.6 5.7 5 1 .4 1.7.6 2.3.8.8.2 1.6.2 2.2.1.7-.1 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z" />
   </svg>
 );
 
@@ -24,42 +24,42 @@ const MapPinIcon = () => (
 
 const FacebookIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
   </svg>
 );
 
 const MenuIcon = () => (
   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <line x1="3" y1="12" x2="21" y2="12"/>
-    <line x1="3" y1="6" x2="21" y2="6"/>
-    <line x1="3" y1="18" x2="21" y2="18"/>
+    <line x1="3" y1="12" x2="21" y2="12" />
+    <line x1="3" y1="6" x2="21" y2="6" />
+    <line x1="3" y1="18" x2="21" y2="18" />
   </svg>
 );
 
 const CloseIcon = () => (
   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <line x1="18" y1="6" x2="6" y2="18"/>
-    <line x1="6" y1="6" x2="18" y2="18"/>
+    <line x1="18" y1="6" x2="6" y2="18" />
+    <line x1="6" y1="6" x2="18" y2="18" />
   </svg>
 );
 
 const MaintenanceIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
   </svg>
 );
 
 const TimeIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="12" r="10"/>
-    <polyline points="12 6 12 12 16 14"/>
+    <circle cx="12" cy="12" r="10" />
+    <polyline points="12 6 12 12 16 14" />
   </svg>
 );
 
 const MailIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-    <polyline points="22,6 12,13 2,6"/>
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+    <polyline points="22,6 12,13 2,6" />
   </svg>
 );
 
@@ -70,9 +70,9 @@ export default function ContactPage() {
 
   const handleWhatsAppRedirect = (subject: string) => {
     const text = encodeURIComponent(
-      `السلام عليكم ورحمة الله وبركاته، أود الاستفسار عن تفاصيل: (${subject}) من شركة الإمتياز.`
+      `السلام عليكم ورحمة الله وبركاته، أود الاستفسار عن تفاصيل: (${subject}) من شركة إمتياز.`
     );
-    window.open(`https://wa.me/201070833314?text=${text}`, "_blank");
+    window.open(`https://wa.me/201070833313?text=${text}`, "_blank");
   };
 
   const handleContactSubmit = (e: React.FormEvent) => {
@@ -80,7 +80,7 @@ export default function ContactPage() {
     const text = encodeURIComponent(
       `السلام عليكم، أنا ${formData.name}.\nرقم الهاتف: ${formData.phone}.\nأود الاستفسار عن: ${formData.message}`
     );
-    window.open(`https://wa.me/201070833314?text=${text}`, "_blank");
+    window.open(`https://wa.me/201070833313?text=${text}`, "_blank");
     setFormSubmitted(true);
     setTimeout(() => setFormSubmitted(false), 5000);
   };
@@ -90,19 +90,19 @@ export default function ContactPage() {
       {/* Sticky Header */}
       <header className="header">
         <div className="container headerContainer">
-          <div className="logo">
-            <img 
-              src="/images/logo.jpg" 
-              alt="لوجو شركة الإمتياز" 
-              width={55} 
-              height={55} 
+          <Link to="/" className="logo">
+            <img
+              src="/emtiaz/images/logo.jpg"
+              alt="لوجو شركة إمتياز"
+              width={55}
+              height={55}
               className="logoImage"
             />
             <div className="logoText">
-              <h1>شركة الإمتياز</h1>
+              <h1>شركة إمتياز</h1>
               <span>لتصنيع محطات الخرسانة</span>
             </div>
-          </div>
+          </Link>
 
           <nav className={`nav ${mobileMenuOpen ? "navActive" : ""}`}>
             <Link to="/" className="navLink" onClick={() => setMobileMenuOpen(false)}>الرئيسية</Link>
@@ -113,11 +113,11 @@ export default function ContactPage() {
           </nav>
 
           <div className="headerCta">
-            <a href="tel:01070833312" className="phoneLink">
+            <a href="tel:01070833313" className="phoneLink">
               <PhoneIcon />
-              <span>الصيانة: 01070833312</span>
+              <span>الصيانة: 01070833313</span>
             </a>
-            <button 
+            <button
               className="whatsapp-btn"
               onClick={() => handleWhatsAppRedirect("طلب عام / استفسار")}
               style={{ padding: "8px 16px", fontSize: "0.9rem" }}
@@ -150,7 +150,7 @@ export default function ContactPage() {
       <section className="section" style={{ paddingBottom: "80px", backgroundColor: "var(--bg-base)" }}>
         <div className="container">
           <div className="contactGrid">
-            
+
             {/* Contact Form */}
             <div className="contactForm">
               <h4 className="formTitle" style={{ fontSize: "1.6rem", color: "white", fontWeight: "800" }}>أرسل استفسارك الآن</h4>
@@ -227,8 +227,8 @@ export default function ContactPage() {
                 <div className="infoContent">
                   <h4>إدارة المبيعات والتعاقدات</h4>
                   <p>لطلبات الشراء والتعاقدات والاستفسارات الفنية والتجارية:</p>
-                  <a href="tel:01070833314" className="infoLink">01070833314</a>
-                  <a href="https://wa.me/201070833314" target="_blank" rel="noopener noreferrer" style={{ color: "var(--whatsapp-color)", fontWeight: "bold" }}>
+                  <a href="tel:01070833313" className="infoLink">01070833313</a>
+                  <a href="https://wa.me/201070833313" target="_blank" rel="noopener noreferrer" style={{ color: "var(--whatsapp-color)", fontWeight: "bold" }}>
                     تحدث معنا عبر واتساب مباشرة
                   </a>
                 </div>
@@ -258,7 +258,7 @@ export default function ContactPage() {
                     rel="noopener noreferrer"
                     className="infoLink"
                   >
-                    صفحة شركة الإمتياز على فيسبوك
+                    صفحة شركة إمتياز على فيسبوك
                   </a>
                 </div>
               </div>
@@ -276,7 +276,7 @@ export default function ContactPage() {
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="موقع شركة الإمتياز على خرائط جوجل"
+              title="موقع شركة إمتياز على خرائط جوجل"
             ></iframe>
           </div>
         </div>
@@ -289,15 +289,15 @@ export default function ContactPage() {
             {/* Column 1 (Right): Brand Info */}
             <div className="footerCol">
               <div className="footerLogo" style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
-                <img 
-                  src="/images/logo.jpg" 
-                  alt="لوجو شركة الإمتياز" 
-                  width={55} 
-                  height={55} 
+                <img
+                  src="/emtiaz/images/logo.jpg"
+                  alt="لوجو شركة إمتياز"
+                  width={55}
+                  height={55}
                   className="logoImage"
                 />
                 <div>
-                  <h3 style={{ fontSize: "1.3rem", fontWeight: "800", color: "white" }}>شركة الإمتياز</h3>
+                  <h3 style={{ fontSize: "1.3rem", fontWeight: "800", color: "white" }}>شركة إمتياز</h3>
                   <p style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>لتصنيع محطات الخرسانة</p>
                 </div>
               </div>
@@ -305,20 +305,20 @@ export default function ContactPage() {
                 الاسم الموثوق في مصر وليبيا لتصنيع محطات الخرسانة الجاهزة وسيلوهات الإسمنت وغربلة الركام. نتحرك بثقة نحو ريادة الصناعات الثقيلة.
               </p>
               <div className="footerSocials" style={{ display: "flex", gap: "12px" }}>
-                <a 
-                  href="https://wa.me/201070833314" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://wa.me/201070833313"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="socialBtn"
                   style={{ color: "var(--whatsapp-color)" }}
                   aria-label="WhatsApp"
                 >
                   <WhatsAppIcon />
                 </a>
-                <a 
-                  href="https://www.facebook.com/profile.php?id=100064085473050" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://www.facebook.com/profile.php?id=100064085473050"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="socialBtn"
                   aria-label="Facebook"
                 >
@@ -354,11 +354,11 @@ export default function ContactPage() {
             <div className="footerCol">
               <h4 className="footerTitle">اتصل بنا</h4>
               <div className="footerContactStack">
-                <a href="tel:01070833314" className="footerContactLink">
+                <a href="tel:01070833313" className="footerContactLink">
                   <PhoneIcon />
                   <div>
                     <span>قسم المبيعات:</span>
-                    <strong>01070833314</strong>
+                    <strong>01070833313</strong>
                   </div>
                 </a>
                 <a href="tel:01070833312" className="footerContactLink">
@@ -388,14 +388,14 @@ export default function ContactPage() {
 
           <div className="footerBottom" style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center", borderTop: "1px solid rgba(255,255,255,0.03)", paddingTop: "30px", marginTop: "40px" }}>
             <p className="copyright" style={{ margin: 0 }}>
-              جميع الحقوق محفوظة لشركة الإمتياز لتصنيع محطات الخرسانة © {new Date().getFullYear()}
+              جميع الحقوق محفوظة لشركة إمتياز لتصنيع محطات الخرسانة © {new Date().getFullYear()}
             </p>
             <p style={{ fontStyle: "italic", fontSize: "0.85rem", color: "var(--text-dark)", margin: 0 }}>
               Designed & Developed by{" "}
-              <a 
-                href="https://www.facebook.com/profile.php?id=61579454496946" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://www.facebook.com/profile.php?id=61579454496946"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{ color: "#10b981", fontWeight: "700", textDecoration: "none" }}
               >
                 SpeedUp

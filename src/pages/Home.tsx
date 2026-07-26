@@ -114,36 +114,36 @@ const MAIN_CATEGORIES_SHOWCASE: MainCategory[] = [
   {
     title: "محطات الخرسانة الجاهزة",
     description: "تصنيع وتجهيز محطات الخرسانة الثابتة والمتحركة ومصانع الإنترلوك بمختلف السعات والقدرات التشغيلية من 80 إلى 120م³.",
-    image: "/images/486471563_1069345438544962_872698005021278874_n.jpg",
+    image: "/emtiaz/images/486471563_1069345438544962_872698005021278874_n.jpg",
     link: "/products?category=batching"
   },
   {
     title: "الغربلة وأنظمة السيور",
     description: "تصنيع مهزات الركام وغربال السن بمختلف المقاسات، وسيور التغذية وسيور نقل المواد المحورية الشاقة.",
-    image: "/images/486641740_1069345401878299_2779942071246690946_n.jpg",
+    image: "/emtiaz/images/486641740_1069345401878299_2779942071246690946_n.jpg",
     link: "/products?category=screening"
   },
   {
     title: "السيلوهات والخزانات الصناعية",
     description: "تصنيع سيلوهات تخزين الإسمنت الفولاذية بسعة 120 و 150 طن وتوريد خزانات الوقود والمياه والمعالجات الكيميائية.",
-    image: "/images/485107178_1065877335558439_1431773722307996633_n.jpg",
+    image: "/emtiaz/images/silo_150_ton.jpg",
     link: "/products?category=silos"
   },
   {
     title: "خدمات الصيانة والتركيب",
     description: "فك ونقل المحطات، وزيادة السعات والقدرات التشغيلية، وتوفير قطع الغيار الفورية، مع دعم فني طارئ 24 ساعة.",
-    image: "/images/584445806_1264421859037318_3017940199291918115_n.jpg",
+    image: "/emtiaz/images/584445806_1264421859037318_3017940199291918115_n.jpg",
     link: "/products?category=spare"
   }
 ];
 
 const HERO_SLIDES = [
-  "/images/486471563_1069345438544962_872698005021278874_n.jpg",
-  "/images/489447717_1081447364001436_7369565754761327534_n.jpg",
-  "/images/485107178_1065877335558439_1431773722307996633_n.jpg",
-  "/images/486315488_1069345365211636_5164400317900976198_n.jpg",
-  "/images/583619745_1264421849037319_7611249301773617131_n.jpg",
-  "/images/584755566_1264421955703975_6663156461601610510_n.jpg"
+  "/emtiaz/images/486471563_1069345438544962_872698005021278874_n.jpg",
+  "/emtiaz/images/489447717_1081447364001436_7369565754761327534_n.jpg",
+  "/emtiaz/images/silo_150_ton.jpg",
+  "/emtiaz/images/486315488_1069345365211636_5164400317900976198_n.jpg",
+  "/emtiaz/images/583619745_1264421849037319_7611249301773617131_n.jpg",
+  "/emtiaz/images/584755566_1264421955703975_6663156461601610510_n.jpg"
 ];
 
 // Success Partners list definition
@@ -169,9 +169,9 @@ export default function Home() {
 
   const handleWhatsAppRedirect = (subject: string) => {
     const text = encodeURIComponent(
-      `السلام عليكم ورحمة الله وبركاته، أود الاستفسار عن تفاصيل: (${subject}) من شركة الإمتياز لتصنيع محطات الخرسانة.`
+      `السلام عليكم ورحمة الله وبركاته، أود الاستفسار عن تفاصيل: (${subject}) من شركة إمتياز لتصنيع محطات الخرسانة.`
     );
-    window.open(`https://wa.me/201070833314?text=${text}`, "_blank");
+    window.open(`https://wa.me/201070833313?text=${text}`, "_blank");
   };
 
   const handleContactSubmit = (e: React.FormEvent) => {
@@ -180,7 +180,7 @@ export default function Home() {
     const text = encodeURIComponent(
       `السلام عليكم، أنا ${formData.name}.\nرقم الهاتف: ${formData.phone}.\nأود الاستفسار عن: ${formData.message}`
     );
-    window.open(`https://wa.me/201070833314?text=${text}`, "_blank");
+    window.open(`https://wa.me/201070833313?text=${text}`, "_blank");
     setFormSubmitted(true);
     setTimeout(() => setFormSubmitted(false), 5000);
   };
@@ -190,19 +190,19 @@ export default function Home() {
       {/* Dynamic Sticky Header */}
       <header className="header">
         <div className="container headerContainer">
-          <div className="logo">
+          <Link to="/" className="logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <img
-              src="/images/logo.jpg"
-              alt="لوجو شركة الإمتياز"
+              src="/emtiaz/images/logo.jpg"
+              alt="لوجو شركة إمتياز"
               width={55}
               height={55}
               className="logoImage"
             />
             <div className="logoText">
-              <h1>شركة الإمتياز</h1>
+              <h1>شركة إمتياز</h1>
               <span>لتصنيع محطات الخرسانة</span>
             </div>
-          </div>
+          </Link>
 
           <nav className={`nav ${mobileMenuOpen ? "navActive" : ""}`}>
             <a href="#home" className="navLink navLinkActive" onClick={() => setMobileMenuOpen(false)}>الرئيسية</a>
@@ -213,9 +213,9 @@ export default function Home() {
           </nav>
 
           <div className="headerCta">
-            <a href="tel:01070833312" className="phoneLink">
+            <a href="tel:01070833313" className="phoneLink">
               <PhoneIcon />
-              <span>الصيانة: 01070833312</span>
+              <span>الصيانة: 01070833313</span>
             </a>
             <button
               className="whatsapp-btn"
@@ -250,7 +250,7 @@ export default function Home() {
                 {isNear && (
                   <img
                     src={slide}
-                    alt={`معدات ومحطات شركة الإمتياز ${index + 1}`}
+                    alt={`معدات ومحطات شركة إمتياز ${index + 1}`}
                     className="sliderImage"
                     loading={index === 0 ? "eager" : "lazy"}
                   />
@@ -272,13 +272,13 @@ export default function Home() {
                 نصنع القوة لتشييد المستقبل بـ <span className="gradient-text">أعلى كفاءة</span>
               </h2>
               <p className="heroDesc">
-                شركة الإمتياز رائدة تصنيع محطات الخرسانة الجاهزة بجميع مشتملاتها، الغرابيل، وسيور النقل، والصوامع وتجهيزات مصانع الإنترلوك. نوفر حلولًا هندسية متكاملة لشركائنا في مصر وليبيا مع خدمة صيانة وأعطال على مدار 24 ساعة تحت الطلب.
+                شركة إمتياز رائدة تصنيع محطات الخرسانة الجاهزة بجميع مشتملاتها، الغرابيل، وسيور النقل، والصوامع وتجهيزات مصانع الإنترلوك. نوفر حلولًا هندسية متكاملة لشركائنا في مصر وليبيا مع خدمة صيانة وأعطال على مدار 24 ساعة تحت الطلب.
               </p>
               <div className="heroButtons">
                 <a href="#products" className="glow-btn">
                   <span>تصفح المنتجات</span>
                 </a>
-                <a href="https://wa.me/201070833314" target="_blank" rel="noopener noreferrer" className="whatsapp-btn">
+                <a href="https://wa.me/201070833313" target="_blank" rel="noopener noreferrer" className="whatsapp-btn">
                   <WhatsAppIcon />
                   <span>طلب اتصال واتساب</span>
                 </a>
@@ -329,8 +329,8 @@ export default function Home() {
             <div>
               <div className="imageFrame" style={{ aspectRatio: "4/3" }}>
                 <img
-                  src="/images/486444843_1069345568544949_7618368949671730782_n.jpg"
-                  alt="معدات ومصانع خرسانة شركة الإمتياز"
+                  src="/emtiaz/images/about_factory.jpg"
+                  alt="معدات ومصانع خرسانة شركة إمتياز"
                   className="cardImage"
                 />
                 <div className="glowOverlay"></div>
@@ -338,7 +338,7 @@ export default function Home() {
             </div>
             <div>
               <span className="sectionSub">من نحن</span>
-              <h3 className="sectionTitle">شركة الإمتياز لتصنيع محطات الخرسانة</h3>
+              <h3 className="sectionTitle">شركة إمتياز لتصنيع محطات الخرسانة</h3>
               <p style={{ marginBottom: "20px", fontSize: "1.05rem" }}>
                 انطلقت مسيرتنا في عام 2016 كشركة مصرية متخصصة في التصنيع الهندسي والميكانيكي لمعدات مصانع الخرسانة ومستلزماتها. على مدار السنوات، نجحنا في كسب ثقة كبرى شركات المقاولات والخرسانة الجاهزة في مصر والدول المجاورة مثل ليبيا.
               </p>
@@ -454,17 +454,16 @@ export default function Home() {
           <div className="sectionHeader" style={{ textAlign: "center", marginBottom: "45px" }}>
             <span className="sectionSub">الفيديوهات الميدانية</span>
             <h3 className="sectionTitle" style={{ fontSize: "2.3rem", fontWeight: "900" }}>محطاتنا في مواقع العمل</h3>
-            <p className="sectionDesc" style={{ margin: "0 auto", maxWidth: "600px" }}>شاهد عروضًا مرئية لتشغيل وإنتاج محطات الخرسانة ومعدات شركة الإمتياز في الميدان</p>
+            <p className="sectionDesc" style={{ margin: "0 auto", maxWidth: "600px" }}>شاهد عروضًا مرئية لتشغيل وإنتاج محطات الخرسانة ومعدات شركة إمتياز في الميدان</p>
           </div>
 
           <div className="videosGrid">
             <div className="videoCard">
               <div className="videoWrapper">
-                <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                  title="تشغيل محطة خرسانة ثابتة سعة 120م³"
-                  allowFullScreen
-                ></iframe>
+                <video controls preload="metadata" playsInline>
+                  <source src="/emtiaz/VID-20260721-WA0055.mp4" type="video/mp4" />
+                  متصفحك لا يدعم تشغيل الفيديو.
+                </video>
               </div>
               <div className="videoInfo">
                 <h4 className="videoTitle">تشغيل محطة خرسانة ثابتة سعة 120م³</h4>
@@ -474,11 +473,10 @@ export default function Home() {
 
             <div className="videoCard">
               <div className="videoWrapper">
-                <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                  title="تصنيع وتوريد سيلوهات الإسمنت"
-                  allowFullScreen
-                ></iframe>
+                <video controls preload="metadata" playsInline>
+                  <source src="/emtiaz/VID-20260721-WA0056.mp4" type="video/mp4" />
+                  متصفحك لا يدعم تشغيل الفيديو.
+                </video>
               </div>
               <div className="videoInfo">
                 <h4 className="videoTitle">تصنيع وتوريد سيلوهات الإسمنت 150 طن</h4>
@@ -488,11 +486,10 @@ export default function Home() {
 
             <div className="videoCard">
               <div className="videoWrapper">
-                <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                  title="أعمال الصيانة والدعم الفني"
-                  allowFullScreen
-                ></iframe>
+                <video controls preload="metadata" playsInline>
+                  <source src="/emtiaz/VID-20260721-WA0057.mp4" type="video/mp4" />
+                  متصفحك لا يدعم تشغيل الفيديو.
+                </video>
               </div>
               <div className="videoInfo">
                 <h4 className="videoTitle">أعمال الصيانة والدعم الفني للمحطات</h4>
@@ -616,8 +613,8 @@ export default function Home() {
                 <div className="infoContent">
                   <h4>إدارة المبيعات والتعاقدات</h4>
                   <p>لطلبات الشراء والتعاقدات والاستفسارات الفنية والتجارية:</p>
-                  <a href="tel:01070833314" className="infoLink">01070833314</a>
-                  <a href="https://wa.me/201070833314" target="_blank" rel="noopener noreferrer" style={{ color: "var(--whatsapp-color)", fontWeight: "bold" }}>
+                  <a href="tel:01070833313" className="infoLink">01070833313</a>
+                  <a href="https://wa.me/201070833313" target="_blank" rel="noopener noreferrer" style={{ color: "var(--whatsapp-color)", fontWeight: "bold" }}>
                     تحدث معنا عبر واتساب مباشرة
                   </a>
                 </div>
@@ -647,7 +644,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="infoLink"
                   >
-                    صفحة شركة الإمتياز على فيسبوك
+                    صفحة شركة إمتياز على فيسبوك
                   </a>
                 </div>
               </div>
@@ -664,7 +661,7 @@ export default function Home() {
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="موقع شركة الإمتياز على خرائط جوجل"
+              title="موقع شركة إمتياز على خرائط جوجل"
             ></iframe>
           </div>
         </div>
@@ -678,14 +675,14 @@ export default function Home() {
             <div className="footerCol">
               <div className="footerLogo" style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "20px" }}>
                 <img
-                  src="/images/logo.jpg"
-                  alt="لوجو شركة الإمتياز"
+                  src="/emtiaz/images/logo.jpg"
+                  alt="لوجو شركة إمتياز"
                   width={55}
                   height={55}
                   className="logoImage"
                 />
                 <div>
-                  <h3 style={{ fontSize: "1.3rem", fontWeight: "800", color: "white" }}>شركة الإمتياز</h3>
+                  <h3 style={{ fontSize: "1.3rem", fontWeight: "800", color: "white" }}>شركة إمتياز</h3>
                   <p style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>لتصنيع محطات الخرسانة</p>
                 </div>
               </div>
@@ -694,7 +691,7 @@ export default function Home() {
               </p>
               <div className="footerSocials" style={{ display: "flex", gap: "12px" }}>
                 <a
-                  href="https://wa.me/201070833314"
+                  href="https://wa.me/201070833313"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="socialBtn"
@@ -742,11 +739,11 @@ export default function Home() {
             <div className="footerCol">
               <h4 className="footerTitle">اتصل بنا</h4>
               <div className="footerContactStack">
-                <a href="tel:01070833314" className="footerContactLink">
+                <a href="tel:01070833313" className="footerContactLink">
                   <PhoneIcon />
                   <div>
                     <span>قسم المبيعات:</span>
-                    <strong>01070833314</strong>
+                    <strong>01070833313</strong>
                   </div>
                 </a>
                 <a href="tel:01070833312" className="footerContactLink">
@@ -776,7 +773,7 @@ export default function Home() {
 
           <div className="footerBottom" style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center", borderTop: "1px solid rgba(255,255,255,0.03)", paddingTop: "30px", marginTop: "40px" }}>
             <p className="copyright" style={{ margin: 0 }}>
-              جميع الحقوق محفوظة لشركة الإمتياز لتصنيع محطات الخرسانة © {new Date().getFullYear()}
+              جميع الحقوق محفوظة لشركة إمتياز لتصنيع محطات الخرسانة © {new Date().getFullYear()}
             </p>
             <p style={{ fontStyle: "italic", fontSize: "0.85rem", color: "var(--text-dark)", margin: 0 }}>
               Designed & Developed by{" "}
