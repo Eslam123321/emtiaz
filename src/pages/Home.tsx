@@ -62,7 +62,7 @@ interface HeroSlide {
 
 const HERO_SLIDES: HeroSlide[] = [
   {
-    image: "/images/هيرو.jpeg",
+    image: "/images/هيرو.webp",
     title: "شركة إمتياز لتصنيع محطات الخرسانة ومعدات البناء",
     subtitle: "شريكك الأول في صناعة الجودة وتجهيز المحطات والمصانع"
   },
@@ -98,8 +98,8 @@ interface PartnerItem {
 
 const PARTNERS: PartnerItem[] = [
   { name: "اوجي مكس", shortCode: "OG", category: "خرسانة جاهزة", color: "#f59e0b", logo: "/images/شركات/اوجي مكس.webp" },
-  { name: "شركة تلال", shortCode: "TL", category: "خرسانة جاهزة", color: "#3b1e54", logo: "/images/شركات/تلال.jpeg" },
-  { name: "شركة أبكس", shortCode: "AP", category: "تجارة ومقاولات", color: "#0284c7", logo: "/images/شركات/ابكس.jpeg" },
+  { name: "شركة تلال", shortCode: "TL", category: "خرسانة جاهزة", color: "#3b1e54", logo: "/images/شركات/تلال.webp" },
+  { name: "شركة أبكس", shortCode: "AP", category: "تجارة ومقاولات", color: "#0284c7", logo: "/images/شركات/ابكس.webp" },
   { name: "الاتحاد", shortCode: "IT", category: "مقاولات وخرسانة", color: "#3b82f6" },
   { name: "شركة النور جراند", shortCode: "NG", category: "تطوير واستثمار", color: "#10b981" },
   { name: "شركة ام اتش", shortCode: "MH", category: "صناعات هندسية", color: "#ef4444", logo: "/images/شركات/ام اتش .webp" },

@@ -31,10 +31,14 @@
     <link rel="icon" type="image/webp" href="/images/logo.webp" />
     <link rel="apple-touch-icon" href="/images/logo.webp" />
 
-    <!-- Preconnect & Fonts -->
+    <!-- Preconnect & Fonts (display=swap for zero render-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Critical Image Preloads for Instant First Paint -->
+    <link rel="preload" as="image" href="/images/logo.webp" type="image/webp" />
+    <link rel="preload" as="image" href="/images/هيرو.webp" type="image/webp" fetchpriority="high" />
 
     <!-- JSON-LD Structured Data Schema for Google Rich Snippets -->
     <script type="application/ld+json">
