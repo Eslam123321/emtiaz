@@ -108,7 +108,7 @@ const PARTNERS: PartnerItem[] = [
   { name: "يوني بيلد", shortCode: "UB", category: "حلول البناء الحديث", color: "#14b8a6", logo: "/images/شركات/يوني بيلد .webp" },
   { name: "شركة اعمار ميكس", shortCode: "EM", category: "خرسانة ومقاولات", color: "#ec4899", logo: "/images/شركات/عمار ميكس .webp" },
   { name: "شركة دلتا للمشروعات الهندسية", shortCode: "DL", category: "مشروعات هندسية", color: "#6366f1" },
-  { name: "ميناء ايكوبات", shortCode: "ME", category: "أعمال بحرية وخرسانة", color: "#22c55e", logo: "/images/شركات/ايكوبات .webp" },
+  { name: "ايكوبات", shortCode: "EC", category: "أعمال بحرية وخرسانة", color: "#22c55e", logo: "/images/شركات/ايكوبات .webp" },
   { name: "شركة صن كريت", shortCode: "SC", category: "خرسانة جاهزة", color: "#eab308", logo: "/images/شركات/صن كريت .webp" },
   { name: "يوني مكس", shortCode: "UM", category: "خرسانة جاهزة", color: "#0ea5e9", logo: "/images/شركات/يوني مكس.webp" },
   { name: "ميجا بارست", shortCode: "MP", category: "خرسانة ومعدات", color: "#a855f7" }
