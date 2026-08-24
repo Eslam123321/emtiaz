@@ -441,9 +441,9 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="categoryGrid">
+            <div className="categoryGrid homeCategoryGrid">
               {MAIN_CATEGORIES.map((item, index) => (
-                <article key={index} className="categoryCard">
+                <article key={index} className="categoryCard homeCategoryCard">
                   <div className="cardImageContainer" style={{ aspectRatio: "16/11" }}>
                     <img
                       src={getImageUrl(item.image)}
@@ -453,10 +453,10 @@ export default function Home() {
                       decoding="async"
                     />
                   </div>
-                  <div className="cardBody" style={{ padding: "24px", display: "flex", flexDirection: "column", flexGrow: 1 }}>
-                    <h3 className="cardTitle" style={{ fontSize: "1.3rem", fontWeight: "800", marginBottom: "12px", color: "white" }}>{item.title}</h3>
-                    <p className="cardDesc" style={{ fontSize: "0.95rem", color: "var(--text-muted)", lineHeight: "1.6", marginBottom: "24px", flexGrow: 1 }}>{item.description}</p>
-                    <Link to={item.link} className="categoryCardBtn">
+                  <div className="cardBody homeCategoryBody">
+                    <h3 className="cardTitle homeCategoryTitle">{item.title}</h3>
+                    <p className="cardDesc homeCategoryDesc">{item.description}</p>
+                    <Link to={item.link} className="categoryCardBtn homeCategoryBtn">
                       عرض التفاصيل
                     </Link>
                   </div>
