@@ -987,8 +987,8 @@
 }
 
 .partnerLogoBadge {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
@@ -997,15 +997,15 @@
   flex-shrink: 0;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  background-color: #0c0e12;
+  background-color: #ffffff;
 }
 
 .partnerLogoImg {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
-  border-radius: 4px;
+  padding: 4px;
 }
 
 .partnerLogoText {

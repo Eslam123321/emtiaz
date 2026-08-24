@@ -98,10 +98,11 @@ interface PartnerItem {
 
 const PARTNERS: PartnerItem[] = [
   { name: "اوجي مكس", shortCode: "OG", category: "خرسانة جاهزة", color: "#f59e0b", logo: "/images/شركات/اوجي مكس.webp" },
+  { name: "شركة تلال", shortCode: "TL", category: "خرسانة جاهزة", color: "#3b1e54", logo: "/images/شركات/تلال.jpeg" },
+  { name: "شركة أبكس", shortCode: "AP", category: "تجارة ومقاولات", color: "#0284c7", logo: "/images/شركات/ابكس.jpeg" },
   { name: "الاتحاد", shortCode: "IT", category: "مقاولات وخرسانة", color: "#3b82f6" },
   { name: "شركة النور جراند", shortCode: "NG", category: "تطوير واستثمار", color: "#10b981" },
   { name: "شركة ام اتش", shortCode: "MH", category: "صناعات هندسية", color: "#ef4444", logo: "/images/شركات/ام اتش .webp" },
-  { name: "شركة تلال", shortCode: "TL", category: "خرسانة ومقاولات", color: "#8b5cf6" },
   { name: "الفا ميكس", shortCode: "AM", category: "خلطات خرسانية", color: "#06b6d4", logo: "/images/شركات/الفا ميكس.webp" },
   { name: "بتر مكس", shortCode: "BM", category: "خرسانة متطورة", color: "#f97316", logo: "/images/شركات/شركة بترمكس.webp" },
   { name: "يوني بيلد", shortCode: "UB", category: "حلول البناء الحديث", color: "#14b8a6", logo: "/images/شركات/يوني بيلد .webp" },
