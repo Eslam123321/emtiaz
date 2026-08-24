@@ -62,6 +62,11 @@ interface HeroSlide {
 
 const HERO_SLIDES: HeroSlide[] = [
   {
+    image: "/images/هيرو.jpeg",
+    title: "شركة إمتياز لتصنيع محطات الخرسانة ومعدات البناء",
+    subtitle: "شريكك الأول في صناعة الجودة وتجهيز المحطات والمصانع"
+  },
+  {
     image: "/images/هيدر1.webp",
     title: "محطات خرسانة جاهزة متطورة",
     subtitle: "قدرات تشغيلية وإنتاجية من 80 إلى 120م³ / ساعة"

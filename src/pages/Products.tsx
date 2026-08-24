@@ -132,6 +132,51 @@ const SPARE_PARTS_DATA: SparePartConfig[] = [
 
 const BASE_PRODUCTS: Product[] = [
   {
+    id: 13,
+    title: "تانك مياه 57000 لتر",
+    category: "silos",
+    categoryName: "سيلوهات وخزانات",
+    description: "تصنيع وتجهيز تانك وخزان مياه صناعي ضخم سعة 57,000 لتر لمحطات الخرسانة الجاهزة، مصنع من ألواح صلب عالية المتانة ومقاومة للصدأ والعوامل الجوية مع قواعد تثبيت هندسية وتجهيزات سحب وضخ متكاملة.",
+    image: "/images/تانك.jpeg",
+    specs: ["سعة تخزين ضخمة 57,000 لتر (57م³)", "صلب عالي المقاومة والتحمل", "دهانات حماية ومعالجة ضد الصدأ والتآكل", "قواعد تثبيت هندسية وتوصيلات سريعة"]
+  },
+  {
+    id: 16,
+    title: "سيلوهات إسمنت فولاذية (120 - 150 طن)",
+    category: "silos",
+    categoryName: "سيلوهات وخزانات",
+    description: "تصنيع سيلوهات وصوامع تخزين الإسمنت والمواد السائبة بسعات 120 و 150 طن، مجهزة بسلالم صيانة، صمامات أمان علوية، وفلاتر غبار لضمان كفاءة تفريغ آمنة.",
+    image: "/images/cement_silo.webp",
+    specs: ["سعات تخزين 120 و 150 طن", "صمامات أمان وفلاتر غبار علوية", "هيكل فولاذي مقاوم للإجهاد والأحمال", "فتحات تفريغ سفلية متوافقة مع السكروهات"]
+  },
+  {
+    id: 17,
+    title: "تانك مياه 57 ألف لتر معزول",
+    category: "silos",
+    categoryName: "سيلوهات وخزانات",
+    description: "تصنيع وتجهيز خزان مياه ضخم بسعة 57,000 لتر، مزود بعزل حراري عالي الكفاءة من الصوف الحراري وكسوة خارجية حامية من ألواح الألمونيوم المقاومة للظروف الجوية الصعبة وللحفاظ على حرارة المياه.",
+    image: "/images/water_tank_57k.webp",
+    specs: ["سعة 57,000 لتر", "عزل صوف حراري عالي الكثافة", "كسوة ألمونيوم خارجية", "مضخات وتوصيلات متكاملة"]
+  },
+  {
+    id: 20,
+    title: "بكر نقل حركة",
+    category: "spare",
+    categoryName: "قطع الغيار والخدمات",
+    description: "بكر ورولات نقل حركة أصلية لسيور نقل المواد والركام بمحطات الخرسانة، مصنعة بأعلى مواصفات التحمل الميكانيكي ومزودة برولمانات بلي معزولة ضد الأتربة وغبار الإسمنت لضمان دوران سلس وعمر تشغيلي طويل.",
+    image: "/images/بكر.jpeg",
+    specs: ["رولات وبكر نقل حركة شاق", "رولمانات بلي معزولة عالية التحمل", "مقاومة فائقة للتآكل والاحتكاك", "متوفرة بجميع الأطوال والأقطار القياسية"]
+  },
+  {
+    id: 21,
+    title: "لوح كنترول روم لتشغيل محطات الخرسانه",
+    category: "spare",
+    categoryName: "قطع الغيار والخدمات",
+    description: "لوحات تحكم وتشغيل كنترول روم متكاملة لإدارة وتشغيل محطات الخرسانة الجاهزة آلياً ونصف آلي، مزودة بشاشات رقمية دقيقة لموازين الإسمنت والمياه والركام، ومفاتيح طوارئ وتحكم متطورة لأعلى درجات الأمان والإنتاجية.",
+    image: "/images/لوحه كهرباء.jpeg",
+    specs: ["شاشات وزن وموازين رقمية دقيقة", "تحكم كامل لجميع أجزاء المحطة", "مفاتيح وحمايات كهربائية معتمدة", "تصميم هندسي مريح لغرفة التحكم (Control Room)"]
+  },
+  {
     id: 2,
     title: "محطات خرسانة متحركة (80م³ - 120م³)",
     category: "batching",
@@ -159,13 +204,31 @@ const BASE_PRODUCTS: Product[] = [
     specs: ["سعات تخزين ركام متعددة", "بوابات تفريغ سريعة هوائية", "هيكل فولاذي شديد التحمل", "حساسات وموازين وزن إلكترونية"]
   },
   {
-    id: 13,
-    title: "تانك مياه 57 ألف لتر معزول",
-    category: "silos",
-    categoryName: "سيلوهات وخزانات",
-    description: "تصنيع وتجهيز خزان مياه ضخم بسعة 57,000 لتر، مزود بعزل حراري عالي الكفاءة من الصوف الحراري وكسوة خارجية حامية من ألواح الألمونيوم المقاومة للظروف الجوية الصعبة وللحفاظ على حرارة المياه.",
-    image: "/images/water_tank_57k.webp",
-    specs: ["سعة 57,000 لتر", "عزل صوف حراري عالي الكثافة", "كسوة ألمونيوم خارجية", "مضخات وتوصيلات متكاملة"]
+    id: 8,
+    title: "محطات ومصانع الإنترلوك المتكاملة",
+    category: "batching",
+    categoryName: "محطات خرسانة",
+    description: "تصنيع وتركيب محطات وخطوط إنتاج الإنترلوك والبردورات والبلوك الإسمنتي بجميع مشتملاتها من خلاطات وسيور ومكابس آلية ونصف آلية.",
+    image: "/images/583248397_1264421912370646_5653268569184743852_n.webp",
+    specs: ["خطوط إنتاج متكاملة", "قوالب متعددة الأشكال والمقاسات", "أنظمة هيدروليكية دقيقة", "كفاءة إنتاجية عالية"]
+  },
+  {
+    id: 5,
+    title: "غربال الركام والسن (المهزات)",
+    category: "screening",
+    categoryName: "مهزات وسيور",
+    description: "تصنيع مهزات وغرابيل ركام عالية الكفاءة بمختلف السعات والمقاسات، لفرز وتدريج السن والرمل بدقة متناهية.",
+    image: "/images/gravel_screen.webp",
+    specs: ["شبك صلب عالي المرونة", "محركات اهتزازية شاقة", "دقة فصل ونقاء عالية", "هياكل متينة مقاومة للاهتزاز"]
+  },
+  {
+    id: 6,
+    title: "سيور نقل وتغذية المواد المحورية",
+    category: "screening",
+    categoryName: "مهزات وسيور",
+    description: "تصنيع خطوط وسيور نقل وتغذية المواد والركام للمحطات بمقاسات وأطوال مخصصة، مزودة برولات متينة ومحركات قوية.",
+    image: "/images/سيور2.webp",
+    specs: ["سيور مطاطية متعددة الطبقات", "محركات وتروس تخفيض شديدة التحمل", "طنابير مخرطة ومضادة للانزلاق", "شاسيهات فولاذية مقواة"]
   },
   {
     id: 7,
@@ -175,15 +238,6 @@ const BASE_PRODUCTS: Product[] = [
     description: "تصنيع وتوريد مجرشات وجوارش ثلج صناعية قوية، مخصصة لكسر الثلج المضاف للخلطة الخرسانية لخفض درجة حرارتها أثناء الصب في الأجواء الحارة.",
     image: "/images/584132553_1264421732370664_6616535584646022451_n.webp",
     specs: ["قدرة تكسير وجرش سريعة", "شفرات فولاذية مقاومة للتآكل", "محرك شاق معزول", "تغذية وتفريغ مباشر للخلاط"]
-  },
-  {
-    id: 8,
-    title: "محطات ومصانع الإنترلوك المتكاملة",
-    category: "batching",
-    categoryName: "محطات خرسانة",
-    description: "تصنيع وتركيب محطات وخطوط إنتاج الإنترلوك والبردورات والبلوك الإسمنتي بجميع مشتملاتها من خلاطات وسيور ومكابس آلية ونصف آلية.",
-    image: "/images/583248397_1264421912370646_5653268569184743852_n.webp",
-    specs: ["خطوط إنتاج متكاملة", "قوالب متعددة الأشكال والمقاسات", "أنظمة هيدروليكية دقيقة", "كفاءة إنتاجية عالية"]
   },
   {
     id: 9,
@@ -323,10 +377,10 @@ export default function Products() {
               عرض <strong>{filteredProducts.length}</strong> منتج ومعدة متوفرة
             </div>
 
-            <div className="categoryGrid">
+            <div className="categoryGrid productsCatalogGrid">
               {filteredProducts.map((product) => (
-                <article key={product.id} className="categoryCard" style={{ display: "flex", flexDirection: "column" }}>
-                  <div className="cardImageContainer" style={{ aspectRatio: "4/3", cursor: "pointer" }} onClick={() => setSelectedProduct(product)}>
+                <article key={product.id} className="categoryCard productCatalogCard">
+                  <div className="cardImageContainer" onClick={() => setSelectedProduct(product)}>
                     <img
                       src={getImageUrl(product.image)}
                       alt={product.title}
@@ -336,39 +390,37 @@ export default function Products() {
                     />
                     <span className="cardCategoryBadge">{product.categoryName}</span>
                   </div>
-                  <div className="cardBody" style={{ padding: "20px", display: "flex", flexDirection: "column", flexGrow: 1 }}>
-                    <h2 className="cardTitle" style={{ fontSize: "1.2rem", fontWeight: "800", marginBottom: "10px", color: "white" }}>
+                  <div className="cardBody productCardBody">
+                    <h2 className="cardTitle productCardTitle" onClick={() => setSelectedProduct(product)}>
                       {product.title}
                     </h2>
-                    <p className="cardDesc" style={{ fontSize: "0.9rem", color: "var(--text-muted)", lineHeight: "1.6", marginBottom: "18px", flexGrow: 1 }}>
+                    <p className="cardDesc productCardDesc">
                       {product.description}
                     </p>
 
                     {product.specs && product.specs.length > 0 && (
-                      <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginBottom: "16px" }}>
+                      <div className="productCardSpecs">
                         {product.specs.slice(0, 2).map((spec, sIdx) => (
-                          <span key={sIdx} style={{ fontSize: "0.75rem", backgroundColor: "rgba(255,255,255,0.05)", border: "1px solid var(--border-subtle)", padding: "3px 8px", borderRadius: "4px", color: "#cbd5e1" }}>
+                          <span key={sIdx} className="productSpecTag">
                             {spec}
                           </span>
                         ))}
                       </div>
                     )}
 
-                    <div style={{ display: "flex", gap: "10px" }}>
+                    <div className="productCardActions">
                       <button
                         onClick={() => setSelectedProduct(product)}
-                        className="categoryCardBtn"
-                        style={{ flex: 1, textAlign: "center" }}
+                        className="categoryCardBtn productBtnSpecs"
                       >
                         المواصفات
                       </button>
                       <button
                         onClick={() => handleProductWhatsApp(product)}
-                        className="whatsapp-btn"
-                        style={{ padding: "8px 14px", fontSize: "0.85rem" }}
+                        className="whatsapp-btn productBtnOrder"
                         title="طلب عرض سعر عبر واتساب"
                       >
-                        <WhatsAppIcon size={18} />
+                        <WhatsAppIcon size={16} />
                         <span>طلب سعر</span>
                       </button>
                     </div>
